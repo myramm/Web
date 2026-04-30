@@ -1,0 +1,20 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/>
+      <stop offset="1" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="220" y="120" width="760" height="460" rx="28" fill="rgba(255,255,255,0.10)" stroke="rgba(148,163,184,0.45)"/>
+  <text x="270" y="200" fill="#E2E8F0" font-size="44" font-family="Inter,Arial,sans-serif" font-weight="700">Web Simple Bagus — Fullstack Next.js</text>
+  <text x="270" y="245" fill="#CBD5E1" font-size="24" font-family="Inter,Arial,sans-serif">Quote app dengan API route + error handling</text>
+  <rect x="270" y="290" width="280" height="56" rx="14" fill="url(#btn)"/>
+  <text x="305" y="325" fill="#0F172A" font-size="22" font-family="Inter,Arial,sans-serif" font-weight="700">Ambil Quote dari API</text>
+  <rect x="270" y="370" width="660" height="110" rx="14" fill="rgba(15,23,42,0.55)" stroke="rgba(148,163,184,0.45)"/>
+  <text x="295" y="430" fill="#E2E8F0" font-size="28" font-family="Inter,Arial,sans-serif">✨ Konsistensi kecil lebih kuat daripada niat besar.</text>
+</svg>

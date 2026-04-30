@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Tampilan Web</title>
+  <style>
+    :root { --bg1:#020617; --bg2:#1e1b4b; --card:rgba(255,255,255,.1); --text:#e2e8f0; --a:#22d3ee; --b:#a78bfa; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; font-family:Inter,system-ui,sans-serif; color:var(--text);
+      background: radial-gradient(circle at top left, #0f172a, transparent 40%), linear-gradient(135deg,var(--bg1),var(--bg2));
+      display:grid; place-items:center; padding:24px; }
+    .card { width:min(760px,100%); border-radius:24px; padding:28px; backdrop-filter:blur(12px); background:var(--card);
+      border:1px solid rgba(148,163,184,.35); box-shadow:0 20px 60px rgba(0,0,0,.35); }
+    button { border:none; padding:12px 14px; border-radius:12px; background:linear-gradient(90deg,var(--a),var(--b)); color:#0f172a; font-weight:700; cursor:pointer; }
+    .box { margin-top:16px; padding:14px; border-radius:12px; background:rgba(15,23,42,.5); border:1px solid rgba(148,163,184,.35); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Web Simple Bagus — Fullstack Next.js</h1>
+    <p>Ini <strong>demo tampilan visual</strong> untuk lihat bentuk web dengan cepat.</p>
+    <button id="btn">Ambil Quote Demo</button>
+    <div class="box" id="quote">✨ Mulai dari kecil, hasilkan perubahan besar.</div>
+  </main>
+
+  <script>
+    const quotes = [
+      'Konsistensi kecil lebih kuat daripada niat besar.',
+      'Bangun sesuatu hari ini, walau belum sempurna.',
+      'Disiplin adalah bentuk cinta terhadap masa depanmu.',
+      'Jangan menunggu siap, mulai saja dulu.'
+    ];
+    document.getElementById('btn').onclick = () => {
+      const q = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById('quote').textContent = `✨ ${q}`;
+    };
+  </script>
+</body>
+</html>
